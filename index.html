@@ -5,68 +5,92 @@
 <title>AkramCell.com | Social Links</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body { 
-    background: #1676d2;
-    color: #fff; 
-    font-family: 'Segoe UI', Arial, sans-serif; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    min-height: 100vh; 
-    margin: 0;
+body { 
+    background: #1676d2;
+    color: #fff; 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
 }
 .container {
-    padding: 32px 16px;
-    max-width: 400px;
-    width: 100%;
-    margin-top: 48px;
-    background: rgba(255,255,255,0.04);
-    border-radius: 20px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+    padding: 32px 16px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 48px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 20px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.14);
 }
 img.logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: 0 auto 18px auto;
-    display: block;
-    object-fit: cover;
-    border: 2px solid #7ade41;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 18px auto;
+    display: block;
+    object-fit: cover;
+    border: 2px solid #7ade41;
 }
 h1 {
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
 }
 p {
-    text-align: center;
-    margin-bottom: 22px;
-    color: #b8e994;
+    text-align: center;
+    margin-bottom: 22px;
+    color: #b8e994;
 }
+
+/* --- EDITS START HERE --- */
+
 .links a {
-    display: block;
-    background: #222;
-    color: #fff;
-    text-decoration: none;
-    margin: 12px 0;
-    padding: 16px;
-    border-radius: 14px;
-    font-size: 1.13rem;
-    font-weight: 500;
-    box-shadow: 0 2px 12px #0003;
-    transition: background .15s;
-    letter-spacing: 0.5px;
-    text-align: center;
+    display: flex; /* Changed to flex for icon positioning */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: space-between; /* Space text/icon on opposite ends */
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    margin: 12px 0;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 1.13rem;
+    font-weight: 500;
+    box-shadow: 0 2px 12px #0003;
+    transition: background .15s;
+    letter-spacing: 0.5px;
+    text-align: left; /* Aligned text to the left of the container */
 }
 .links a:hover, .links a:focus {
-    background: #47db46;
-    color: #161616;
+    background: #47db46;
+    color: #161616;
 }
+
+.icon {
+    font-size: 1.4rem; /* Make the icon slightly larger */
+    line-height: 1; /* Ensure proper vertical alignment */
+    margin-left: 10px; /* Space between the name and the icon */
+    /* Added specific colors for better branding */
+}
+.facebook .icon { color: #3b5998; } /* Facebook Blue */
+.whatsapp .icon { color: #25d366; } /* WhatsApp Green */
+.instagram .icon { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tiktok .icon { color: #000; text-shadow: -1px -1px 0 #25f4ee, 1px 1px 0 #fe2c55; } /* TikTok Effect */
+.location .icon { color: #ea4335; } /* Google Maps Red */
+
+/* --- EDITS END HERE --- */
+
 .footer {
-    text-align: center;
-    font-size: 0.91rem;
-    color: #888;
-    margin-top: 38px;
+    text-align: center;
+    font-size: 0.91rem;
+    color: #888;
+    margin-top: 38px;
 }
 </style>
 </head>
@@ -74,20 +98,34 @@ p {
 
 <div class="container">
 
-    <!-- REAL LOGO YOU UPLOADED -->
-    <img src="https://raw.githubusercontent.com/akramcell-hub/akramcell-linktree/main/logo.png" 
-     alt="AkramCell logo" class="logo">
+        <img src="https://raw.githubusercontent.com/akramcell-hub/akramcell-linktree/main/logo.png" 
+     alt="AkramCell logo" class="logo">
 
-    <h1>AkramCell</h1>
-    <p>كل الروابط الرسمية لمحلات أكرم سيل في مكان واحد</p>
+    <h1>AkramCell</h1>
+    <p>كل الروابط الرسمية لمحلات أكرم سيل في مكان واحد</p>
 
-    <div class="links">
-        <a href="https://www.facebook.com/share/17bRcTMcMD/" target="_blank">📘 Facebook </a>
-        <a href="https://wa.me/96170610605" target="_blank">💬 WhatsApp </a>
-        <a href="https://www.instagram.com/akramcell3?igsh=MXF1a3BzZnBrc21vdA==" target="_blank">📸 Instagram </a>
-        <a href="https://www.tiktok.com/@akram_cell_?_r=1&_t=ZS-915ycR1QsK5" target="_blank">🎵 Tiktok </a>
-        <a href="https://maps.app.goo.gl/EdNfbsXKHYDvnEsp7">📍 Location </a>
-    </div>
+    <div class="links">
+        <a href="https://www.facebook.com/share/17bRcTMcMD/" target="_blank" class="facebook">
+            <span>Facebook</span> 
+            <span class="icon">f</span>
+        </a>
+        <a href="https://wa.me/96170610605" target="_blank" class="whatsapp">
+            <span>WhatsApp</span> 
+            <span class="icon">💬</span>
+        </a>
+        <a href="https://www.instagram.com/akramcell3?igsh=MXF1a3BzZnBrc21vdA==" target="_blank" class="instagram">
+            <span>Instagram</span> 
+            <span class="icon">📸</span>
+        </a>
+        <a href="https://www.tiktok.com/@akram_cell_?_r=1&_t=ZS-915ycR1QsK5" target="_blank" class="tiktok">
+            <span>Tiktok</span> 
+            <span class="icon">🎵</span>
+        </a>
+        <a href="https://maps.app.goo.gl/EdNfbsXKHYDvnEsp7" target="_blank" class="location">
+            <span>Location</span> 
+            <span class="icon">📍</span>
+        </a>
+    </div>
 </div>
 
 <div class="footer">© 2025 AkramCell | All rights reserved</div>

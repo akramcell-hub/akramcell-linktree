@@ -44,34 +44,29 @@ p {
     color: #b8e994;
 }
 
-/* Updated CSS for logo alignment */
+/* CORRECTED CSS FOR ICONS - Back to basic centering */
 .links a {
-    /* Set display to flex to align image and text horizontally */
-    display: flex;
-    align-items: center; /* Vertically center the logo and text */
-    justify-content: center; /* Center the whole content horizontally */
-
-    background: #222;
-    color: #fff;
-    text-decoration: none;
-    margin: 12px 0;
-    padding: 16px;
-    border-radius: 14px;
-    font-size: 1.13rem;
-    font-weight: 500;
-    box-shadow: 0 2px 12px #0003;
-    transition: background .15s;
-    letter-spacing: 0.5px;
+    display: block; 
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    margin: 12px 0;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 1.13rem;
+    font-weight: 500;
+    box-shadow: 0 2px 12px #0003;
+    transition: background .15s;
+    letter-spacing: 0.5px;
+    text-align: center; /* This centers the text AND the image/text block */
 }
 
 /* Style for the logo images inside the link buttons */
 .links img.social-icon {
-    width: 24px; /* Standard icon size */
-    height: 24px;
-    /* Space on both sides for LTR/RTL compatibility */
-    margin-left: 8px; 
-    margin-right: 8px; 
-    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; /* Adds space between the icon and the text */
+    vertical-align: middle; /* Ensures the icon aligns properly with the text */
 }
 
 .links a:hover, .links a:focus {
